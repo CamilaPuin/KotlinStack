@@ -20,7 +20,7 @@ El proyecto contiene:
 
 ## Requisitos
 
-- [Kotlin](https://kotlinlang.org/docs/command-line.html) (instalado en tu sistema)
+- [Kotlin](https://kotlinlang.org/docs/command-line.html) (instalado en el sistema, con la ruta del bin en el Path de variables de entorno)
 - [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html) (para ejecutar Kotlin)
 - VS Code con la extensión **Kotlin by fwcd** y **Code Runner by Jun Han** para facilitar la ejecución
 
