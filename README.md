@@ -25,11 +25,11 @@ El proyecto contiene:
 
 ## Instalación
 
-Instalación de Kotlin en macOS
+Instalación de Kotlin en macOS (en la terminal)
 1. Verificar Homebrew
     brew --version
 
-Si no está instalado:
+    Si no está instalado:
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 2. Instalar Kotlin
@@ -39,6 +39,22 @@ Si no está instalado:
     kotlin -version
     kotlinc -version
 
+Instalación de Kotlin en Windows
 
+1. Instalar Kotlin:  
+Descargar el compilador en [kotlinlang.org](https://kotlinlang.org/docs/command-line.html) y extraer los archivos dentro de `C:\Kotlin` en `C:\Kotlin`. Agregar `C:\Kotlin\bin` al `PATH`.
 
+2. Verificar instalación:  
+Abrir PowerShell o CMD y ejecutar:
+`kotlinc -version`
 
+3. Compilar y generar JAR ejecutable:  
+Desde la carpeta raíz del proyecto ejecutar:
+`kotlinc src -include-runtime -d bin/main.jar`  
+- `src` → carpeta con los archivos `.kt`  
+- `-include-runtime` → incluye la librería estándar de Kotlin  
+- `-d bin/main.jar` → crea el JAR dentro de la carpeta `bin`
+
+4. Ejecutar el proyecto:  
+`java -jar bin/main.jar`
+    Los archivos `.class` generados pueden eliminarse; el JAR funciona de forma independiente.
