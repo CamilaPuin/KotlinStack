@@ -1,7 +1,6 @@
 *.class
 *.jar
 /bin
-/out
 
 .vscode/
 .idea/
