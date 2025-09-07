@@ -56,5 +56,6 @@ Desde la carpeta raíz del proyecto ejecutar:
 - `-d bin/main.jar` → crea el JAR dentro de la carpeta `bin`
 
 4. Ejecutar el proyecto:  
-`java -jar bin/main.jar`
-    Los archivos `.class` generados pueden eliminarse; el JAR funciona de forma independiente.
+  `java -jar bin/main.jar`
+  O ejecutar con la extension code runner
+  Los archivos `.class` generados pueden eliminarse; el JAR funciona de forma independiente.
