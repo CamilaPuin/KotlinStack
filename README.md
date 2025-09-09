@@ -48,7 +48,7 @@ Descargar el compilador en [kotlinlang.org](https://kotlinlang.org/docs/command-
 Abrir PowerShell o CMD y ejecutar:
 `kotlinc -version`
 
-3. Compilar y generar JAR ejecutable: 
+3. Compilar y generar JAR ejecutable en vscode: 
 Descargar el .zip del proyecto, segurese de tener únicamente la carpeta `KOTLIN STACK` para poder ejecutar lo siguiente
 Desde la carpeta raíz del proyecto ejecutar:
 `kotlinc src -include-runtime -d bin/main.jar`  
@@ -57,6 +57,14 @@ Desde la carpeta raíz del proyecto ejecutar:
 - `-d bin/main.jar` → crea el JAR dentro de la carpeta `bin`
 
 4. Ejecutar el proyecto:  
-  `java -jar bin/main.jar`
-  O ejecutar con la extension code runner
-  Los archivos `.class` generados pueden eliminarse; el JAR funciona de forma independiente.
+Forma 1:
+Ejecutar `java -jar bin/main.jar` en la consola.
+    Los archivos `.class` pueden eliminarse; el JAR funciona de forma independiente.
+Forma 2:
+    Instalar la extensión **Code Runner by Jun Han**.
+    Abrir settings.json (acceder a el con ctrl+shift+P y dar clic en Preferences:Open User Settings (JSON)) 
+    Añadir al settings.json:
+    "[kotlin]": {
+            "editor.defaultFormatter": "fwcd.kotlin"
+        }
+    Ejecutar con ctrl+alt+N o con el botón de run
