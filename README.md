@@ -42,13 +42,14 @@ Instalación de Kotlin en macOS (en la terminal)
 Instalación de Kotlin en Windows
 
 1. Instalar Kotlin:  
-Descargar el compilador en [kotlinlang.org](https://kotlinlang.org/docs/command-line.html) y extraer los archivos dentro de `C:\Kotlin` en `C:\Kotlin`. Agregar `C:\Kotlin\bin` al `PATH`.
+Descargar el compilador en [kotlinlang.org](https://kotlinlang.org/docs/command-line.html) y extraer los archivos dentro de `kolinc` en una nueva carpeta con ruta `C:\Kotlin`. Agregar `C:\Kotlin\bin` al `PATH` del sistema.
 
 2. Verificar instalación:  
 Abrir PowerShell o CMD y ejecutar:
 `kotlinc -version`
 
-3. Compilar y generar JAR ejecutable:  
+3. Compilar y generar JAR ejecutable: 
+Descargar el .zip del proyecto, segurese de tener únicamente la carpeta `KOTLIN STACK` para poder ejecutar lo siguiente
 Desde la carpeta raíz del proyecto ejecutar:
 `kotlinc src -include-runtime -d bin/main.jar`  
 - `src` → carpeta con los archivos `.kt`  
