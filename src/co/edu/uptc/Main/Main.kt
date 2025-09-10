@@ -1,5 +1,11 @@
 fun main() {
     val stack = Stack<Double>()
+    try{
+        println(stack.peek())
+    }
+    catch (e : IllegalStateException){
+        print("Lista vacía")
+    }
     stack.push(10.7)
     stack.push(20.9)
     stack.push(30.5)
