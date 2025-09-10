@@ -61,10 +61,10 @@ Forma 1:
 Ejecutar `java -jar bin/main.jar` en la consola.
     Los archivos `.class` pueden eliminarse; el JAR funciona de forma independiente.
 Forma 2:
-Instalar la extensión **Code Runner by Jun Han**.
-Abrir settings.json (acceder a el con ctrl+shift+P y dar clic en Preferences:Open User Settings (JSON)) 
-Añadir al settings.json:
-"[kotlin]": {
-        "editor.defaultFormatter": "fwcd.kotlin"
-    }
-Ejecutar con ctrl+alt+N o con el botón de run
+    Instalar la extensión **Code Runner by Jun Han**.
+    Abrir settings.json (acceder a el con ctrl+shift+P y dar clic en Preferences:Open User Settings (JSON)) 
+    Añadir al settings.json:
+    "[kotlin]": {
+            "editor.defaultFormatter": "fwcd.kotlin"
+        }
+    Ejecutar con ctrl+alt+N o con el botón de run
